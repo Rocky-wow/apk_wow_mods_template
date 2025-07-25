@@ -29,6 +29,9 @@ services:
         echo '--- Running init script ---';
         bash /workspace/tools/init.sh;
         echo '--- init script finished ---';
+        echo '--- Applying default modification  ---';
+        bash /workspace/tools/modify.sh;
+        echo '--- modified.xapk created ---';
       fi &&
       exec bash
       "
